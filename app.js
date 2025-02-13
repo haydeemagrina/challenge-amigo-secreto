@@ -55,6 +55,9 @@ function sortearAmigo() {
     return;
     }
     
+    botaoAdd = document.getElementById("botao-add")
+    botaoAdd.disabled = true
+    
     let sorteio = shuffleArray(nomesSorteio);
     amigo = sorteio[0];
     document.getElementById("resultado").innerHTML = "Seu amigo secreto é: " + amigo;
@@ -102,11 +105,9 @@ function limparResultado() {
 
 //Função para limpar todos os dados do jogo, permitindo a criação de uma nova lista.
 function limparTudo() {
-    document.getElementById("listaNomes").innerHTML = ""
-    document.getElementById("texto-fim").innerHTML = "" 
-    document.getElementById("resultado").innerHTML = ""
-    document.getElementById("botao-sorteio").disabled = false
-    document.getElementById("botao-limpar-resultado").disabled = false
+    location.reload()
+    botaoAdd = document.getElementById("botao-add")
+    botaoAdd.disabled = false
 }
 
    
