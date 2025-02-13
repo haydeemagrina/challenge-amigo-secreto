@@ -54,13 +54,14 @@ function sortearAmigo() {
     alert("Adicione pelo menos 2 nomes para o sorteio!");
     return;
     }
-    
+
     botaoAdd = document.getElementById("botao-add")
     botaoAdd.disabled = true
     
     let sorteio = shuffleArray(nomesSorteio);
     amigo = sorteio[0];
-    document.getElementById("resultado").innerHTML = "Seu amigo secreto é: " + amigo;
+    mensagem = `Seu amigo secreto é: <span style="color: #c33b0a;">${amigo}</span>!`
+    document.getElementById("resultado").innerHTML = `${mensagem}<br><span class="texto-aviso">Clique em limpar resultado e chame o próximo participante!</span>`;
     let index = nomesSorteio.indexOf(amigo);
 
     if (index !== -1) {
@@ -70,17 +71,12 @@ function sortearAmigo() {
     botao.disabled = true
     if (nomesSorteio.length == 0) {
         parent = document.getElementById('resultado')
-        text = document.createElement('p')
-        text.id = "texto-fim"
-        text.textContent = "Todos os nomes foram sorteados!"
-        parent.appendChild(text)
+        parent.innerHTML = `${mensagem} <br><span class="texto-aviso">Todos os nomes foram sorteados!</span>`
         botaoSorteio = document.getElementById("botao-sorteio")
         botaoSorteio.disabled = true
         botaoLimpar = document.getElementById("botao-limpar-resultado")
         botaoLimpar.disabled = true
     }
-    
-
 }
 
 //Função para embaralhar a lista, utilizou-se o algoritmo de Fisher-Yates
@@ -98,9 +94,6 @@ function limparResultado() {
     lista.innerHTML = ""
     botao = document.getElementById("botao-sorteio")
     botao.disabled = false
-
-
-    
 }
 
 //Função para limpar todos os dados do jogo, permitindo a criação de uma nova lista.

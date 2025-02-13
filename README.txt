@@ -11,7 +11,7 @@ Como utilizá-lo:
 
 1 - Digite um nome no campo indicado e aperte o botão adicionar, digite os próximos nomes, cada um de uma vez, sempre apertando o adicionar para formar uma lista.
 
-2- Cada pessoa da lista deve apertar o botão Sortear amigo, para aparecer o nome sorteado.
+2- Cada pessoa da lista deve apertar o botão Sortear amigo, para aparecer o nome sorteado e, em seguida, apertar limpar resultado.
 Obs: Cada pessoa da lista deve fazer o seu sorteio para conhecer o amigo secreto de forma que ninguém mais veja o nome sorteado. 
 
 3 - Aperte o botão limpar resultado para o próximo sorteio.
