@@ -21,6 +21,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .main-content {
@@ -88,16 +90,15 @@ body {
 
 .button-container {
     display: flex;
-    width: 600px;
+    justify-content: center;
     gap: 15px;
     
 }
 
 .button-container-down {
-    display: flex;
     width: 300px;
     gap: 15px;
-    justify-content: center;
+    justify-items: center;
     
 }
 
@@ -157,8 +158,8 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 10px 40px;
+    flex: 1;
+    padding: 10px 20px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
@@ -166,7 +167,7 @@ ul {
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 10px;
     
 }
 
