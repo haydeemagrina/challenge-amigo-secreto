@@ -1,5 +1,7 @@
 Projeto: Amigo Secreto
 
+Link GitHub Pages: https://haydeemagrina.github.io/challenge-amigo-secreto/
+
 Descrição: O projeto se destina a incluir nomes dos amigos para sortear quem será o amigo secreto de cada um.
 
 Funcionalidades: Cria uma lista com todos os nomes e sorteia um de cada vez até que todos os nomes sejam sorteados.
